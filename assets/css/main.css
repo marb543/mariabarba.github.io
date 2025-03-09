@@ -3423,7 +3423,7 @@ body.is-touch .poptrox-popup .closer {
 }
 
 .scrollable {
-	max-height: 250px;
+	max-height: 150px;
 	overflow-y: auto;
 	scrollbar-width: thin;
 	scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
@@ -3441,7 +3441,7 @@ body.is-touch .poptrox-popup .closer {
 .show {
 	display: block;
 	opacity: 1;
-	max-height: 500px;
+	max-height: 200px;
 }
 
 #header {
