@@ -4719,3 +4719,33 @@ section:first-child {
         height: 400px;
     }
 }
+
+/* Video Gallery */
+.video-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin: 2em 0;
+}
+
+.video-section {
+    width: 100%;
+}
+
+.video-section h3 {
+    color: #8b7355;
+    margin-bottom: 1em;
+}
+
+.video-section video {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive video adjustments */
+@media screen and (max-width: 736px) {
+    .video-section {
+        margin-bottom: 2em;
+    }
+}
