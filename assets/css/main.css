@@ -4638,28 +4638,20 @@ section:first-child {
 	margin: 0 0 2em 0;
 	position: relative;
 	overflow: hidden;
-	max-height: 300px;
-	/* Reduce height */
+	max-height: none; /* Remove max-height restriction */
 }
 
 .hero-image {
 	width: 100%;
-	height: 300px;
-	/* Fixed height */
-	object-fit: cover;
-	object-position: top;
-	/* Show top portion of image */
+	height: auto; /* Let image maintain natural height */
 	display: block;
+	object-fit: contain; /* Ensure image isn't cropped */
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 736px) {
 	.project-hero {
-		max-height: 200px;
-	}
-
-	.hero-image {
-		height: 200px;
+		margin: 0 0 1em 0;
 	}
 }
 
